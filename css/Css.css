@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --green: #27ae60;
+    --dark-color:#219150;
+    --light-color: #666;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0; box-sizing: border-box; outline: none; border: none; text-decoration: none;
+    text-transform: capitalize;
+      transition: width none;
+}
+
+html{
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+   background:transparent;
+}
+
+
+section{
+  padding: 5rem 9%;
+}
+
+
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+ }
+
+ .header .header-1{
+    background:#fff ;
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+ }
+
+
+.fa-book{
+  color: var(--green) !important; 
+}
+
+
+ .header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black) ; 
+ }
+
+
+
+ .header .header-1 .logo i{
+    color:var(--green);
+   
+    
+    
+ }
+
+ .header .header-1 .search-form{
+    width: 49rem;
+    height: 4rem;
+    border:var(--black);
+    overflow:hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+  /* position: relative; */
+   
+ }
+
+
+ .header .header-1 .search-form label{
+ 
+    width: 3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    /* color: var(--black); */
+   left: 18rem;
+ }
+
+ .fa-search{
+  margin-left: -4rem;
+  /* font-size: 9rem; */
+ 
+ }
+ 
+
+ .header .header-1 .search-form label:hover{
+    color: var(--green);
+   
+ }
+
+
+ .header .header-1 .search-form input{
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+    border: 2px solid gainsboro;
+   border-radius: 0.3rem;
+   padding-right: 4.7rem;
+   
+ }
+
+ .icon{
+    font-size: 30px;
+ }
+
+
+ .header .header-1 .icon div,
+ .header .header-1 .icon a{
+   font-size: 2.5rem;
+   margin-left: 1.5rem;
+   color: var(--black);
+   cursor: pointer;
+ }
+
+
+ .header .header-1 .icon div:hover,
+ .header .header-1 .icon a:hover{
+   color: var(--green);
+ }
+
+
+ #search-btn{
+   display: none;
+ }
+
+
+ .header-2{
+   background-color: var(--green);
+   text-align: center;
+   padding: 2rem;
+   margin-top: 1rem;
+ }
+
+ .header-2 .navbar a{
+   padding: 1.3rem 1rem;
+   color: #fff;
+   font-weight: bold;
+   letter-spacing: 1px;
+   font-size: 1.7rem;
+ }
+
+ .header-2 .navbar a:hover{
+  background-color: var(--dark-color);
+  padding: 1.9rem 1rem;
+ }
+
+
+
+.header .header-2.active{
+   position: fixed;
+   top: 0; left: 0; right: 0;
+   z-index: 1000;
+ }
+
+
+.bottom-navbar{
+   text-align: center;
+   background-color: var(--green);
+   position: fixed;
+   bottom: 0; left: 0; right: 0;
+   z-index: 1000;
+   display: none;
+ }
+ .bottom-navbar a{
+   align-items: center;
+   font-size: 2.5rem;
+   padding: 2rem;
+   color: #fff;
+ }
+
+ .bottom-navbar a:hover{
+   background-color: var(--dark-color);
+ }
+
+
+
+
+
+                     /* ..........................Login form............................... */
+
+
+.login-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .9);
+    position: fixed;
+    top: 0px; right: -105%;
+    z-index: 1000;
+    height: 100%;
+    width: 100% ;
+}
+
+.login-form-container form{
+  background: #fff;
+  border: var(--border);
+  width: 40rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  margin: 2rem;
+}
+
+.login-form-container form h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center ;
+}
+
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+     
+}
+
+.login-form-container form .box{
+  width: 100%;
+  margin: .7rem 0;
+   font-size: 1.6rem;
+   border: var(--border);
+   border-radius: .5rem;
+   padding: 1rem 1.2rem;
+   color: var(--black);
+   /* text-transform: none; */
+  
+}
+
+
+
+.login-form-container form .checkbox{
+
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 1rem 0;
+
+}      
+
+.login-form-container form .checkbox label{
+ 
+  font-size: 1.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+}      
+
+
+
+
+.btn{
+  width: 100%;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .9rem 3rem;
+  border-radius: .5rem;
+  color: #fff;
+  background: var(--green);
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+  /* margin: 1.5rem 0; */
+}
+.btn:hover{
+    background-color: var(--dark-color);
+}
+ 
+
+.login-form-container form p{
+    padding-top: 1.5rem;
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.login-form-container form p a{
+  
+  color: var(--green);
+  text-decoration: underline;
+}
+
+
+ 
+.login-form-container #close-login-btn{
+  position: absolute;
+  top: 2rem; right: 3rem;
+  font-size: 5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+
+
+.login-form-container.active{
+right: 0px; 
+transition: 0.3s;
+}
+
+.login-form-container.remove{
+ 
+  transition: 0.3s;
+  }
+  
+  
+
+
+       /* ........................... banner.................................. */
+
+.home{
+  background: url(../image/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .row{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .row .content{
+ 
+    flex: 1 1  42rem;
+   
+    
+}
+.home .row .books-slider{
+  flex: 1 1 42rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home .row .books-slider a img{
+ height: 25rem;
+}
+
+
+
+.home .row .books-slider a:hover img{
+    transform: scale(.9);
+    transition: 0.3s;
+}
+
+.home .row .books-slider .stand{
+  width: 100%;
+  margin-top: -2rem;
+}
+
+.home .row .content h3{
+  font-size: 4.5rem;
+  color: var(--light-color);
+  
+}
+.home .row .content p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+    padding: 1rem 0;
+    
+}
+.home .row .content a{
+  text-align: center;
+  width: 25%;
+  
+}
+
+
+
+
+      /* ...........................Icons section............................. */
+
+
+.icons-container{
+  display: flex;
+justify-content: space-around;
+  font-size: 1.9rem;
+  flex-wrap: wrap;
+}
+
+.icons-container .icons{
+  display: flex;
+  align-items: center;
+  
+  padding: 2rem 0;
+}
+
+
+
+.icons-container .icons p{
+    font-size: 1.6rem;
+}
+
+.icons-container .icons h3{
+ color: var(--black);
+ padding-bottom: .5rem;
+}
+
+.icons-container .icons i{
+  font-size: 3.9rem;
+  color: var(--green);
+  margin-right: 2rem;
+ }
+
+
+
+    /* ........................feature section................. */
+
+
+.heading{
+  font-size: 4rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading::before{
+  content:'';
+  position: absolute;
+  top: 50%; left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: .01rem;
+  background-color: rgba(0,0,0,.1);
+  z-index: -1;
+}
+
+.heading span{
+  font-size: 3rem;
+  padding: .5rem 2rem;
+  background: #fff;
+  border: var(--border);
+  color: var(--black);
+}
+
+
+.featured .featured-slider .box{
+    /* width: 25rem; */
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-top: 5rem;
+}          
+
+.featured .featured-slider .box:hover{
+    border: 1.5px solid black;
+}
+
+.featured .featured-slider .box .image{
+    background: 1rem;
+    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+}
+
+
+.featured .featured-slider .box .image img{
+    height: 25rem;
+}
+
+.featured .featured-slider .box .icons{
+    border-bottom: var(--border-hover);
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+}
+
+.featured .featured-slider .box .icons a{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding:1.3rem 1.5rem;
+    transition: 0.3s;
+}
+.featured .featured-slider .box .icons a:hover{
+  background-color: var(--green);
+  color: #fff;
+}
+
+
+.featured .featured-slider .box:hover .icons{
+  transform: translateY(0%);
+  transition: 0.4s;
+  border-bottom: 1.5px solid black;
+}
+
+.featured .featured-slider .box:hover .image{
+  transform: translateY(6rem);
+  transition: .4s;
+}
+
+
+.featured .featured-slider .box .content{
+ background: #eee;
+ padding: 1.5rem ;
+}
+.featured .featured-slider .box .content h3{
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.featured .featured-slider .box .content .price{
+  font-size: 2.2rem;
+  padding-top: 1rem;
+  color: var(--black);
+}
+
+
+.featured .featured-slider .box .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+
+.featured .featured-slider .box .content a{
+  width: 58%;
+}
+
+
+
+                                  /* Slider ka Next or Back ka button */
+.swiper-button-next,
+.swiper-button-prev{
+     border: var(--border-hover);
+     height: 1rem;
+     width: 1rem;
+     color: var(--black);
+     background-color: #fff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 12rem;
+  
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+  color: #fff;
+  background: rgb(143, 139, 139);
+
+}
+
+
+
+/* <!-- ........................Subscribe section........................... --> */
+
+
+
+.subscribe{
+     background: url(../image/letter-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     height: 35rem;
+}
+
+.subscribe form{
+  float: right;
+  width: 45rem;
+  padding: 5rem 0;
+
+  text-align: center;
+}
+
+
+.subscribe form h3{
+  /* color: #fff; */
+  color: #fff;
+  font-size: 2.2rem;
+  padding-bottom: .5rem;
+  font-weight: bold;
+  /* text-align: center; */
+  
+}
+
+.subscribe form .box{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    border-radius: .5rem;
+    text-decoration: none;
+    background-color: rgb(236, 236, 236);
+    margin-top: 2rem;
+}
+
+.subscribe form .btn{
+  width: 30%;
+  /* margin-left: 37%; */
+
+  margin-top: 2rem;
+  
+}
+
+
+
+            /* .........................Arrivals Section....................... */
+
+
+.arrivals .arrivals-slider .box{
+  display: flex;
+  align-items: center;
+  /* gap: 1.5rem; */
+  padding: 2rem 1rem;
+  border: var(--border);
+  margin: 1rem 0;
+  margin-right: 1.7rem;
+  color: var(--black);
+}
+
+.arrivals .arrivals-slider .box .image img{
+  height: 15rem;
+}
+
+.arrivals .arrivals-slider .box:hover{
+      /* border: var(--border-hover); */
+      border: 1.5px solid black;
+}
+
+
+.arrivals .arrivals-slider .box .content h3{
+  font-size: 2rem;
+  color: var(--black);
+}
+
+
+.arrivals .arrivals-slider .box .content .price{
+  font-size: 2.2rem;  
+  color: var(--black);
+  padding-bottom: .5rem;
+}
+
+.arrivals .arrivals-slider .box .content .price span{
+  font-size: 1.5rem;  
+  color: var(--light-color);
+  text-decoration: line-through;
+}
+
+.arrivals .arrivals-slider .box .content .stars i{
+    font-size: 1.5rem;
+    color: var(--green);
+
+}
+
+        /* .........................................Deal OF the Day...................... */
+
+
+.main-deal{
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.main-deal .content{
+  flex: 1 1 42rem;
+  
+}
+.main-deal .content h3{
+  font-size: 2.3rem;
+  color: var(--green);
+  padding-bottom: 1rem;
+}
+.main-deal .content h1{
+  font-size: 4rem;
+  color: var(--light-color);
+  padding-bottom: 1.5rem;
+}
+.main-deal .content p{
+  font-size: 1.3rem;
+  color: black;
+  letter-spacing: .1rem;
+  line-height: 2.5rem;
+  padding-bottom: 1.6rem;
+}
+.main-deal .content .btn{
+  width: 15rem;
+  text-align: center;
+}
+
+.main-deal .img{
+  flex: 1 1 42rem;
+  /* width: 10%; */
+  
+
+}
+.main-deal .img img{
+  width: 90%;
+  float: right;
+
+
+}
+
+/* ..............................client reviews section....................... */
+
+
+.reviews .reviews-slider .box{
+    border: var(--border);
+    width: 30rem;
+    padding: 2rem;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+.reviews .reviews-slider .box:hover{
+border: var(--border-hover);
+}
+
+.reviews .reviews-slider .box img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .reviews-slider .box h3{
+    color: var(--light-color);
+    padding: .5rem 0;
+    font-size: 2.2rem;
+
+}
+.reviews .reviews-slider .box p{
+  font-size: 1.4rem;
+  color: var(--black);
+  padding: 1rem 0;
+  line-height: 2rem;
+  padding: 0 1.5rem;
+}
+.reviews .reviews-slider .box .stars i{
+  font-size: 1.7rem;
+  color: var(--green);
+  padding-top: 2rem;
+}
+
+#mainreview{
+  padding-top: 7rem;
+}
+
+/* *************************footer******************** */
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.2rem;
+  color:var(--black);
+  padding:1rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.4rem;
+  color:var(--light-color);
+  padding:1rem 0;
+}
+
+.footer .box-container .box a i{
+  color:var(--green);
+  padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i{
+  padding-right: 2.5rem;
+  transition: .3s;
+}
+
+.footer .box-container .box .map{
+  width:100%;
+}
+
+.footer .share{
+  padding:1rem 0;
+  text-align: center;
+}
+
+.footer .share a{
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color:#fff;
+  background:var(--green);
+  margin:0 .3rem;
+  border-radius: 50%; 
+}
+
+.footer .share a:hover{
+
+  background-color: var(--dark-color)
+}
+
+.footer .credit{
+  border-top: var(--border);
+  margin-top: 2rem;
+  padding:0 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color:var(--light-color);
+  text-align: center;
+}
+
+.footer .credit span{
+  color:var(--green);
+}
+
+
+
+          
+
+
+
+
+
+
+
+     
+ @media (max-width: 991px ) {
+   html{
+      font-size: 55%;
+      
+  }
+
+.header .header-1{
+   padding: 2rem;
+}
+ }
+
+
+
+
+ @media (max-width: 768px ) {
+   .header-2{
+   display: none;
+ }
+
+
+ html{
+  scroll-padding-top:0px ;
+  
+ }
+
+ body{
+  padding-bottom: 6rem;
+}
+
+ .header-1{
+   box-shadow: var(--box-shadow);
+   position: relative;
+ }
+
+ .header-1 .search-form{
+   position: absolute;
+   top: -150%;
+ 
+   /* align-items: center !important;  */
+   width: 90% !important;
+   box-shadow: var(--box-shadow);
+   /* align-items: center; */
+ }
+
+ .header-1 .search-form.active{
+  top: 150%;
+  transition: 0.5s;
+ }
+
+
+ #search-btn{
+  display: inline-block;
+}
+
+
+ .bottom-navbar{
+   display: block;
+ }
+
+
+section{
+  padding: 3rem 2rem;
+}
+
+
+.home .row .content{
+    text-align: center;
+}
+
+
+.home .row .content h3{
+    font-size: 3.5rem;
+    color: var(--light-color);
+}
+
+
+ }
+
+
+ @media (max-width: 576px ){
+
+  .subscribe form{
+float: none !important;
+    margin: 0px auto;
+    /* width: 36rem; */
+    width: 85vw;
+  }
+
+  .subscribe form .btn{
+    width: 40%;}
+
+ }
+ 
+
+ @media (max-width: 450px ) {
+   html{
+      font-size: 50%;
+      
+  }
+
+
+ }
